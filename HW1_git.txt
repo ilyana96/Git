@@ -1,0 +1,195 @@
+GIT Homework 1
+
+Для выполнения задания у вас должен быть установлен для Windows - GitBash.
+Создан аккаунт в GitHub
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.	
+ 5. Клонировать репозиторий JSON на локальный компьютер.						git clone https://github.com/ilyana96/JSON.git
+ 6. Внутри локального JSON создать файл “new.json”.							cat > new.json
+ 7. Добавить файл под гит.										git add new.json
+ 8. Закоммитить файл.											git commit -m "add names”
+ 9. Отправить файл на внешний GitHub репозиторий.							git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе 
+(ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.	cat >> new.json
+													
+{
+      "name": "Ochirova Ilyana",
+      "age": 27,
+      "Pets": 0,
+      "Desired salary": "1000$"
+    }
+
+ 11. Отправить изменения на внешний репозиторий.							git commit -am "add names”
+
+													git push
+ 12. Создать файл preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, 	
+любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.			vim preferences.json
+{
+"favorite movie": "Harry Potter",
+"favorite TV series": "The big bang theory",
+"favorite food": "Tom Yam",
+"favorite season": "Spring",
+"Country you want to visit": "The UK"
+	}
+ 14. Создать файл sklls.json добавить информацию о скиллах,
+ которые будут изучены на курсе в формате JSON 								vim skill.json
+
+{
+"skill1": "Gitbush",
+"skill2": "Github",
+"skill3": "Postman",
+"skill4": "Client-server architecture",
+"skill5": "Mobile testing"
+}
+						
+ 15. Отправить сразу 2 файла на внешний репозиторий.							git add -A && git commit -m "add 2 files” 
+													git push					
+ 16. На веб интерфейсе создать файл bug_report.json.		
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.					add file→enter the file name→commit changes
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+ {
+  "Defect ID": "D_AppXYZ_Module1_001",
+  "Defect Title": "Manager Dashboard is not allowing adding newly reports types- history, work completion trends",
+  "Steps to reproduce": "1. Login in as a manager (include manager credentials only if not confidential). 2. Click on the dashboard. 3. Click on + icon to add a new report 4. Select History/Work completion report trends report type 4.Click “Add to dashboard button”"
+  "Expected Result": "The new report should add and the manager should be able to view it on the dashboard",
+  "Actual Result": "An error with the message “No report exists with that name” error message shows",
+  "Evidence/attachment": "< Add image or a word doc with multiple images showing sequence of steps or a quick/short video >",
+  "Severity": "High",
+  "Priority": "Medium",
+  "Environment": "FireFox version 32.4",
+  "Reported by": "Tester XYZ",
+  "Reported on": "7-12-2023",
+  "Status": "New",
+  "Assigned To": "Developer ABC"
+}
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 20. Синхронизировать внешний и локальный репозиторий JSON						git fetch
+													git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.		 
+ 22. Клонировать репозиторий XML на локальный компьютер.						git clone https://github.com/ilyana96/XML.git
+ 23. Внутри локального XML создать файл “new.xml”.							cd XML
+													touch new.xml
+ 24. Добавить файл под гит.										git add new.xml
+ 25. Закоммитить файл.											git commit -m "add xml”
+ 26. Отправить файл на внешний GitHub репозиторий.
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе 
+(ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.	vim new.xml
+<<<<about-me>
+<name>Ilyana Ochirova</name>
+<age>27</age>
+<pets>2</pets>
+<desired-salary>1500</desired-salary>
+</about-me>
+ 28. Отправить изменения на внешний репозиторий.							git commit -am "add xml”
+													git push					
+ 29. Создать файл preferences.xml									touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях 
+(Любимый фильм, любимый сериал, любимая еда, любимое время года, 
+сторона которую хотели бы посетить) в формате XML.							vim preferences.xml
+
+<<<<about-preferences>
+<favorite movie>Harry Potter</favorite movie>
+<favorite TV series>The Big Bang Theory</favorite TV series>
+<favorite season>Spring</favorite season>
+<favorite food>Tom yam</favorite food>
+<country want to visit>The UK</country want to visit>
+</about-preferences>
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML 	vim skills.xml
+<<<about-skills>
+<skill1>git bash<skill1>
+<skill2>github<skill2>
+<skill3>postman<skill3>
+<skill4>client-server arcithecture<skill4>
+<skill5>mobile testing<skill5>
+</about-skills>
+ 32. Сделать коммит в одну строку.									git add -A && git commit -m "add 2 files” 
+ 33. Отправить сразу 2 файла на внешний репозиторий.							git push
+ 34. На веб интерфейсе создать файл bug_report.xml.							add file→create new file
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+<<<<bug_report>
+  <Defect ID >D_AppXYZ_Module1_001</Defect ID >
+  <Defect Title> Manager Dashboard is not allowing adding newly reports types- history, work completion trends</Defect Title>
+  <Steps to reproduce>1. Login in as a manager (include manager credentials only if not confidential). 2. Click on the dashboard. 3. Click on + icon to add a new report 4. Select History/Work completion report trends report type 4.Click “Add to dashboard button”</Steps to reproduce>
+  <Expected Result>The new report should add and the manager should be able to view it on the dashboard</Expected Result>
+  <Actual Result>An error with the message “No report exists with that name” error message shows</Actual Result>
+  <Attachment>"Add image or a word doc with multiple images showing sequence of steps or a quick/short video"</Attachment>
+  <Severity>High</Severity>
+  <Priority>Medium</Priority>
+  <Environment>FireFox version 32.4</Environment>
+  <Reported by>Tester XYZ</Reported by>
+  <Reported on>7-12-2023</Reported on>
+  <Status>New</Status>
+  <Assigned To>Developer ABC </Assigned To>
+</bug_report>
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML							git fetch 
+														git pull
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.						
+ 2. Клонировать репозиторий TXT на локальный компьютер.								git clone https://github.com/ilyana96/TXT.git				
+ 3. Внутри локального TXT создать файл “new.txt”.								cat > new.txt
+ 4. Добавить файл под гит.											git add new.txt							
+ 5. Закоммитить файл.												git commit -m "add names”
+ 6. Отправить файл на внешний GitHub репозиторий.								git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе 
+(ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.		 cat >> new.txt
+full name: Ochirova Ilyana Yurievna
+age: 27
+pets: 2
+future salary: 1500
+ 8. Отправить изменения на внешний репозиторий.									git commit -am "add names”
+
+														git push
+ 9. Создать файл preferences.txt										cat > preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, 
+любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.		vim preferences.txt
+fav_movie Terminator
+fav_TV_series The Big Bang Theory
+fav_food Salad
+fav_season Summer
+country The UK
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT		vim skill.txt
+skill1: Terminal linux
+skill2: Github
+skill3: Client Server
+skill4: Sql
+skill5: Postman
+skill5: Mobile testing
+ 12. Сделать коммит в одну строку.										git add -A && git commit -m "add 2 files”
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+ 14. На веб интерфейсе создать файл bug_report.txt.								add file→create new file
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.						
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT. 			vim bug_report.txt
+  Defect ID: D_AppXYZ_Module1_001
+  Defect Title: Manager Dashboard is not allowing adding newly reports types- history, work completion trends
+  Steps to reproduce: "1. Login in as a manager (include manager credentials only if not confidential). 2. Click on the dashboard. 3. Click on + icon to add a new report 4. Select History/Work completion report trends report type 4.Click “Add to dashboard button”
+  Expected Result: "The new report should add and the manager should be able to view it on the dashboard"
+  Actual Result: "An error with the message “No report exists with that name” error message shows"
+  Evidence/attachment: "Add image or a word doc with multiple images showing sequence of steps or a quick/short video"
+  Severity: High
+  Priority: "Medium"
+  Environment: "FireFox version 32.4
+  Reported by: Tester XYZ
+  Reported on: 7-12-2023
+  Status: New
+  Assigned To: Developer ABC
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT							git fetch && pull
